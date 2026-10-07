@@ -5,3 +5,6 @@ Roles asignados para cada integrante:
 2. López Moreno Vanessa Carolina: Diseñadora UX/UI
 3. Lozano Rocha Oliver Nahum: Desarrollador Front-End 1
 4. Pacheco Cabrera Edwin Oziel: Desarrollador Front-End 2
+
+
+Declaramos que se utilizó ia en la creación del mapa de navegación
