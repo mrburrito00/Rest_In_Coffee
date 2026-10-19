@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Perfil de Usuario | Rest In Coffee</title>
+</head>
+<body>
+
+    <header class="desktop-navbar">
+    <div class="logo-text">RIC</div>
+
+    <!-- Menú Principal -->
+    <nav id="menuPrincipal">
+        <a class="opcionMenuPrincipal" href="index.html">Inicio</a>
+        <a class="opcionMenuPrincipal" href="menu.html">Menú</a>
+        <a class="opcionMenuPrincipal" href="pedidos.html">Pedidos</a>
+        <a class="opcionMenuPrincipal activo" href="perfil.html">Perfil</a>
+        <a class="opcionMenuPrincipal" href="iniciosesion.html">Iniciar Sesión</a>
+    </nav>
+    </header>
+
+    <main class="contenedor-escritorio">
+        <header class="encabezado-seccion">
+            <h1>Panel de Usuario</h1>
+            <p>Gestiona tu cuenta, tus preferencias de consumo y revisa tus pedidos.</p>
+        </header>
+
+        <div class="layout-perfil">
+           
+            <aside class="columna-usuario">
+                <div class="tarjeta-avatar">
+                    <img src="../imagenes/perfilfoto.jpg" 
+                         alt="Foto de perfil de usuario" class="avatar-grande">
+                    <h2>Vanessaaaaaa</h2>
+                    <span class="badge-membresia">Cliente Frecuente &bull;</span>
+                    <p class="correo-resumen">vaneeee@gmail.com</p>
+                </div>
+
+                <div class="acciones-perfil-lateral">
+                    <a href="pedidos.html" class="boton-atajo">Mis Pedidos</a>
+                    <a href="menu.html" class="boton-atajo">Explorar Menú</a>
+                    <a href="iniciosesion.html" class="boton-cerrar-sesion">Cerrar Sesión</a>
+                </div>
+            </aside>
+
+       
+            <section class="columna-formulario">
+                <form action="#" method="get" class="formulario-horizontal">
+                    <fieldset class="fieldset-escritorio">
+                        <legend>Información Personal</legend>
+
+                        <div class="fila-campos">
+                            <div class="campo">
+                                <label for="nombreCliente">Nombre(s):</label>
+                                <input type="text" id="nombreCliente" name="nombre" value="Vanessaaaaaa" required>
+                            </div>
+                            <div class="campo">
+                                <label for="apellidosCliente">Apellidos:</label>
+                                <input type="text" id="apellidosCliente" name="apellidos" value="Lopezzz" required>
+                            </div>
+                        </div>
+
+                        <div class="fila-campos">
+                            <div class="campo">
+                                <label for="correoPerfil">Correo Electrónico:</label>
+                                <input type="email" id="correoPerfil" name="correo" value="vaneeee@gmail.com" required>
+                            </div>
+                            <div class="campo">
+                                <label for="telefonoPerfil">Teléfono de Contacto:</label>
+                                <input type="tel" id="telefonoPerfil" name="telefono" value="1234567890" required>
+                            </div>
+                        </div>
+
+                        <div class="fila-campos">
+                            <div class="campo">
+                                <label for="bebidaFavorita">Bebida Favorita:</label>
+                                <select id="bebidaFavorita" name="favorita">
+                                    <option value="latte" selected>Caramel Latte</option>
+                                    <option value="coldbrew">Vanilla Cold Brew</option>
+                                    <option value="cappuccino">Cappuccino Italiano</option>
+                                    <option value="moka">Moka Blanco</option>
+                                </select>
+                            </div>
+                            <div class="campo">
+                                <label for="metodoPago">Método de Pago Preferido:</label>
+                                <select id="metodoPago" name="pago">
+                                    <option value="tarjeta" selected>Tarjeta de Crédito / Débito</option>
+                                    <option value="efectivo">Efectivo en Sucursal</option>
+                                 
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="acciones-formulario">
+                            <input type="submit" value="Guardar Cambios" class="btnGuardarDesktop">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
+
+
+</body>
+</html>

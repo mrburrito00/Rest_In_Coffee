@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Iniciar Sesión | Rest In Coffee</title>
+</head>
+<body>
+
+    <header class="desktop-navbar">
+        <div class="logo-text">RIC</div>
+
+    <nav id="menuPrincipal">
+        <a class="opcionMenuPrincipal" href="index.html">Inicio</a>
+        <a class="opcionMenuPrincipal" href="menu.html">Menú</a>
+        <a class="opcionMenuPrincipal" href="pedidos.html">Pedidos</a>
+        <a class="opcionMenuPrincipal" href="perfil.html">Perfil</a>
+        <a class="opcionMenuPrincipal activo" href="iniciosesion.html">Iniciar Sesión</a>
+    </nav>
+    </header>
+
+
+    <section class="contenido">
+        <h1>Acceso a Clientes</h1>
+        <p>Inicia sesión para gestionar tus pedidos y favoritos.</p>
+
+
+        <fieldset id="formulario">
+            <legend>Login</legend>
+            
+            <form action="pedidos.html" method="get">
+                
+                <label for="correoUsuario">Correo Electrónico:</label>
+                <input type="email" id="correoUsuario" name="correo" required placeholder="ejemplo@correo.com">
+
+                <label for="contrasenaUsuario">Contraseña:</label>
+                <input type="password" id="contrasenaUsuario" name="pass" required placeholder="Ingresa tu contraseña">
+
+                <div class="opciones-login">
+                    <label class="recordar-label">
+                        <input type="checkbox" name="recordar"> Recordar mi sesión
+                    </label>
+                    <a href="#" class="enlace-olvido">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <input type="submit" value="Entrar">
+                
+                
+                </div>
+
+            </form>
+        </fieldset>
+    </section>
+
+
+</body>
+</html>
